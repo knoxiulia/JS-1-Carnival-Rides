@@ -11,21 +11,33 @@ let waterIsOn = true
 
 //Ride 1 works when:
     // green wire is connected
-ride1PowerOn = false
-
+ride1PowerOn = false 
+if (greenWireConnected){
+    ride1PowerOn = true;
+}
 //Ride 2 works when 
     //green and yellow wires are connected
 ride2PowerOn = false
+if (yellowWireConnected){
+    ride2PowerOn = true;
+}
 
 //Ride 3 works when:
     // green and red wires are connected
     // water is on 
     // yellow wire is not connected
 ride3PowerOn = false
+if (redWireConnected = waterIsOn){
+    ride3PowerOn = true;
+}
 
 //Ride 4 has power when:
-    //ride wire is connected
+    //red wire is connected
 ride4PowerOn = false
+if (redWireConnected){
+    ride4PowerOn = true;
+}
+
 //Ride 4 is a slot machine
     //if a 1 is rolled it should return "star"
     //if a 2 is rolled it should return "car"
@@ -35,5 +47,26 @@ ride4PowerOn = false
     //if a 6 is rolled it should return "tiger"
     //if a 7 is rolled it should return "seven"
 function ride4SlotMachine(rolledNumber){
-    return "nothing"
+    if (1){
+        console.log("star")
+    }
+    if (2){
+        console.log("car")
+    }
+    if (3){
+        console.log("pot of gold")
+    }
+    if (4){
+        console.log("clover")
+    }
+    if (5){
+        console.log("bowlng ball")
+    }
+    if (6){
+        console.log("tiger")
+    }
+    if (7){
+        console.log("seven")
+    }
+
 }
