@@ -47,26 +47,20 @@ if (redWireConnected){
     //if a 6 is rolled it should return "tiger"
     //if a 7 is rolled it should return "seven"
 function ride4SlotMachine(rolledNumber){
-    if (1){
-        console.log("star")
+    switch (rolledNumber) {
+        case 1:
+            return "star"
+        case 2:
+            return "car"
+        case 3:
+            return "pot of gold"
+        case 4:
+            return "clover"
+        case 5:
+            return "bowling ball"
+        case 6:
+            return "tiger"
+        case 7:
+            return "seven"
     }
-    if (2){
-        console.log("car")
-    }
-    if (3){
-        console.log("pot of gold")
-    }
-    if (4){
-        console.log("clover")
-    }
-    if (5){
-        console.log("bowlng ball")
-    }
-    if (6){
-        console.log("tiger")
-    }
-    if (7){
-        console.log("seven")
-    }
-
 }
